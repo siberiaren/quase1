@@ -1,0 +1,24 @@
+/ {
+    compatible = "zmk,keyboard";
+
+    kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        row-gpios = < 
+            &gpio0 5 
+            &gpio0 8 
+            &gpio0 10 
+            &gpio0 18 
+            &gpio0 19 
+        >;
+        col-gpios = < 
+            &gpio0 6 
+            &gpio0 7 
+            &gpio0 15 
+            &gpio0 16 
+            &gpio0 9 
+            &gpio0 14 
+            &gpio0 20 
+        >;
+        diode-direction = <ROW2COL>;
+    };
+};
